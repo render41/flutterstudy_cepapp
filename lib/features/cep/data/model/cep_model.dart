@@ -15,7 +15,7 @@ class Cep {
   factory Cep.fromJson(Map<String, dynamic> json) {
     return Cep(
       cep: json['cep'],
-      publicPlace: json['l'],
+      publicPlace: json['logradouro'],
       neighborhood: json['bairro'],
       locality: json['localidade'],
     );
@@ -24,7 +24,7 @@ class Cep {
   Map<String, dynamic> toJson() {
     return {
       "cep": cep,
-      "l": publicPlace,
+      "logradouro": publicPlace,
       "bairro": neighborhood,
       "localidade": locality,
     };

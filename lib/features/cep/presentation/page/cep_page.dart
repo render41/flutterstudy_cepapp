@@ -32,7 +32,8 @@ class _CepPageState extends State<CepPage> {
   }
 
   Widget get body {
-    return Center(
+    return Padding(
+      padding: const EdgeInsets.all(18.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

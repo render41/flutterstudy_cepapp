@@ -12,8 +12,6 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(brightness: Brightness.light, primarySwatch: Colors.amber),
-      darkTheme: ThemeData(brightness: Brightness.dark),
       home: const CepPage(),
     );
   }
